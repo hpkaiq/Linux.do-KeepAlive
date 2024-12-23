@@ -68,6 +68,8 @@ account = os.getenv("LINUXDO_USERNAME")
 password = os.getenv("LINUXDO_PASSWORD")
 
 co = ChromiumOptions()
+co.set_argument('--no-sandbox')
+co.set_argument('--headless=new')
 co.set_argument('--disable-blink-features=AutomationControlled')
 # co.headless()
 co.set_user_agent('Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.3029.110 Safari/537.3')
