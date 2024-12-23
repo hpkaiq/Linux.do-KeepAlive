@@ -67,7 +67,7 @@ def logout(tab):
 account = os.getenv("LINUXDO_USERNAME")
 password = os.getenv("LINUXDO_PASSWORD")
 
-co = ChromiumOptions()
+co = ChromiumOptions().set_paths(browser_path=r'/usr/lib/chromium/chrome')
 co.set_argument('--no-sandbox')
 co.set_argument('--headless=new')
 co.set_argument('--disable-blink-features=AutomationControlled')
