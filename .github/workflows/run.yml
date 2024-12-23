@@ -1,8 +1,6 @@
 name: Run Linux.do Script
 
 on:
-  workflow_dispatch:
-  
   schedule:
 #    - cron: "0 0 * * *" # 每天CST时间8点执行
     - cron: "0 */48 * * *" # 每每48小时运行一次
