@@ -1,9 +1,9 @@
 name: Run Linux.do Script
 
 on:
-  schedule:
+#  schedule:
 #    - cron: "0 0 * * *" # 每天CST时间8点执行
-    - cron: "0 */48 * * *" # 每每48小时运行一次
+#    - cron: "0 */48 * * *" # 每每48小时运行一次
   workflow_dispatch: # 允许手动触发
 
 jobs:
